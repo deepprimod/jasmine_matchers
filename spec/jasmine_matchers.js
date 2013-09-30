@@ -69,3 +69,29 @@ var object = false;
 expect(object).toBeFalsy();
 });
 });
+
+
+//-toBeLessThan- perform the simple mathematical less-than
+// toBeGreaterThan- used to perform the simple greater-than operations
+
+describe("the toBeLessThan Matcher", function() {
+it("should be able to perform the less than operation",
+function() {
+expect(4).toBeLessThan(5);
+});
+});
+describe("the toBeGreaterThan Matcher", function() {
+it("should be able to perform the greater than operation",
+function() {
+expect(5).toBeGreaterThan(4);
+});
+});
+
+//toMatch- to match the value with a regular expression
+
+describe("the toMatch Matcher", function() {
+it("should be able to match the value with a regular expression",
+function() {
+expect(5).toMatch("[0-9]");
+});
+});
